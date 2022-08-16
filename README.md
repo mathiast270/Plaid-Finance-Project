@@ -1,1 +1,3 @@
-temp file
+# Project Description
+
+This project implements a sample backend service using the Plaid API and spring security. The basic workflow can be described as such. A new user in the database is created by calling the /createuser endpoint. Once a user is created and logged in they can then link their bank accounts. To do this there needs to be a working frontend which calls the /create_link_token and opens link and then calls the get /exchange_public_token endpoint. More about this https://plaid.com/docs/quickstart/. Lastly to update the information from Plaid the admin/owners can call the update users endpoint which updates the all the users financial information with whats on Plaid.
